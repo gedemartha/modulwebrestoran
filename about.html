@@ -1,54 +1,202 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About Us</title>
 	<!-- Panggil library bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">Koderest</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav">
-	      <li class="nav-item">
-	        <a class="nav-link" href="Home.html">Home</a>
-	      </li>
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Tentang Kami <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Kontak</a>
-	      </li>
-	    </ul>
-	  </div>
-	</nav>
-
-	<div class="container my-5">
+	<!--1. Navbar-->
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="javascript:void(0)"> <img src="image/logo-rst.png" alt="Bootstrap" width="50" height="50"></a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="mynavbar">
+			<ul class="navbar-nav me-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html">HOME</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="menu.html">MENU</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="about.html">ABOUT</a>
+			  </li>
+			</ul>
+			<form class="d-flex">
+			  <input class="form-control me-2" type="text" placeholder="Search">
+			  <button class="btn btn-primary" type="button">Search</button>
+			</form>
+		  </div>
+		</div>
+	  </nav>
+	<br>
+	<br>
+	<br>
+	<br>
+	<!-- 2. About Us (tentang kami)-->
+	<div class="container">
 		<h1 class="text-center mb-4">Tentang Kami</h1>
 		<div class="row">
 			<div class="col-md-6">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, mi sed commodo faucibus, urna risus lobortis magna, in molestie velit lorem ut lectus. Maecenas tempus imperdiet urna, nec sodales dolor consectetur vitae. Donec convallis ultrices leo vitae pulvinar. Pellentesque id hendrerit ante, eget volutpat felis. Donec a felis vel turpis varius pellentesque. Fusce sit amet aliquam nunc, nec volutpat sapien. Integer dictum eros ut ex lacinia faucibus. Curabitur in dolor erat.</p>
+			<p>Selamat datang di <b>KODEREST</b>, tempat yang ideal untuk menikmati hidangan lezat dan suasana yang menyenangkan. Kami menawarkan menu yang beragam dengan bahan-bahan segar dan berkualitas tinggi. Selain hidangan yang lezat, kami juga menawarkan suasana yang nyaman dan bersahabat. Kami bangga menjadi tujuan favorit bagi pecinta kuliner dan penggemar makanan di kota ini.</p>
+
+			<p>Kami bangga menjadi restoran yang ramah lingkungan dengan menggunakan bahan-bahan organik dan mengurangi penggunaan bahan-bahan yang berbahaya. Kami juga menyediakan minuman yang menyegarkan, mulai dari jus buah segar, minuman kopi, teh, hingga minuman beralkohol pilihan. Kami berkomitmen untuk memberikan layanan terbaik bagi pelanggan kami dan menjaga reputasi kami sebagai restoran yang terpercaya dan berkualitas. Terima kasih telah memilih kami sebagai tujuan kuliner Anda.</p>
+
 			</div>
 			<div class="col-md-6">
-				<img src="https://picsum.photos/500/300" alt="Restoran" class="img-fluid">
+					<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="true">
+						<div class="carousel-inner">
+						  <div class="carousel-item active">
+							<img src="image/gmb9.jpg" class="d-block w-100" alt="about1">
+						  </div>
+						  <div class="carousel-item">
+							<img src="image/gmb2.jpg" class="d-block w-100" alt="about2">
+						  </div>
+						  <div class="carousel-item">
+							<img src="image/gmb4.jpg" class="d-block w-100" alt="about3">
+						  </div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Next</span>
+						</button>
+					  </div>
 			</div>
 		</div>
 		<div class="row mt-5">
-			<div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
+			<div class="col">
+				<div class="card mb-4 shadow-sm text-center">
 					<div class="card-body">
 						<h4 class="card-title">Visi</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, mi sed commodo faucibus, urna risus lobortis magna, in molestie velit lorem ut lectus. Maecenas tempus imperdiet urna, nec sodales dolor consectetur vitae. Donec convallis ultrices leo vitae pulvinar.</p>
+						<p class="card-text-center">Menjadi restoran terdepan dan terbaik di kota ini dengan menyajikan hidangan yang berkualitas tinggi dan layanan pelanggan yang luar biasa.</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="card mb-4 shadow-sm">
+			<div class="col">
+				<div class="card mb-4 shadow-sm text-center">
 					<div class="card-body">
 						<h4 class="card-title">Misi</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, mi sed commodo faucibus, urna risus lobortis magna, in molestie velit lorem ut lectus. Maecenas tempus imperdiet urna, nec
+						<p class="card-text-center">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">Menyajikan hidangan yang berkualitas tinggi dengan menggunakan bahan-bahan segar dan berkualitas.</li>
+								<li class="list-group-item">Menyediakan suasana yang nyaman dan bersahabat bagi pelanggan.</li>
+								<li class="list-group-item">Mengurangi dampak lingkungan dengan menggunakan bahan-bahan organik dan mengurangi penggunaan bahan-bahan yang berbahaya.</li>
+								<li class="list-group-item">Memberikan layanan pelanggan yang luar biasa dengan staf yang ramah dan profesional.</li>
+							  </ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<!-- 3. Meet Our Team -->
+	<div class="container-fluid bg-dark bg-gradient">
+		<br>
+		<h1 class="text-center mb-4 text-white">Meet Our Team</h1>
+		<div class="row mt-5">
+			<div class="col">
+				<div class="card">
+					<img src="image/people1.jpg" alt="" class="card-img-top">
+					<div class="card-body">
+						<h2 class="text-center">Aoi</h2>
+						<p class="text-center"><i>Owner</i></p>
+						<p class="card-text">Aoi adalah seseorang yang berdedikasi untuk memberikan pengalaman makan yang tak terlupakan bagi pelanggan kami. Aoi memiliki pengalaman bertahun-tahun dalam industri kuliner dan memiliki visi yang jelas tentang bagaimana mengoperasikan restoran yang sukses. Kami bangga memiliki owner yang berkomitmen dan bersemangat dalam menjalankan restoran kami.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="image/people2.jpg" alt="" class="card-img-top">
+					<div class="card-body">
+						<h2 class="text-center">Jinan</h2>
+						<p class="text-center"><i>Marketing Manager</i></p>
+						<p class="card-text">Jinan adalah seseorang yang berdedikasi untuk memastikan restoran kami dikenal oleh masyarakat luas.Marketing manager kami berperan dalam mengembangkan strategi pemasaran, membuat materi iklan, mengelola media sosial, dan berkomunikasi dengan pelanggan. Selain itu, Jinan juga memastikan bahwa reputasi restoran kami selalu terjaga dengan memberikan layanan pelanggan yang luar biasa dan merespon setiap umpan balik dari pelanggan dengan baik.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img src="image/people3.jpg" alt="" class="card-img-top">
+					<div class="card-body">
+						<h2 class="text-center">Amanda</h2>
+						<p class="text-center"><i>HRD Manager</i></p>
+						<p class="card-text">Amanda bertanggung jawab untuk memastikan bahwa tim kami berada dalam kondisi terbaik dan terus berkembang. Dia memiliki pengalaman dan pengetahuan yang luas dalam manajemen sumber daya manusia dan selalu mencari cara baru untuk meningkatkan kinerja tim. Amanda berperan dalam merekrut, melatih, dan mengelola staf kami agar dapat memberikan layanan pelanggan yang terbaik.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+	<br>
+	<br>
+
+	<!--4. Contact Us-->
+	<div class="container-fluid text-center">
+		<h1 class="text-center mb-4">Contact Us !</h1>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col">
+				<p><a href="https://wa.me/081284860595">
+				<img src="image/whatsapp.png" alt="" style="max-width:100px; max-height:100px;">
+				</a></p>
+				<p>Whatsapp : <a href="https://wa.me/081284860595">+62-812-8486-0595 (Jinan)</a></p>
+
+			</div>
+			<div class="col">
+				<p><a href="https://instagram.com/leskodingbali">
+				<img src="image/instagram.png" alt="" style="max-width:100px; max-height:100px;">
+				</a></p>
+				<p>Instagram : <a href="https://instagram.com/leskodingbali"> @leskodingbali</a></p>
+			</div>
+		</div>		
+	</div>
+	<br>
+	<br>
+	<!-- 5. Section website footer-->
+	<footer class="bg-black text-white py-3">
+		<div class="container text-center">
+		<div class="row">
+			<div class="col-md-6">
+			<h3>KODEREST - COFFEE SHOP</h3>
+			<p>Jl. Jend. Sudirman No.123<br>Jakarta, Indonesia<br>Telp: (021) 123-4567<br>Email: info@contoh.com</p>
+			</div>
+			<div class="col-md-6">
+			<h3>Tautan terkait</h3>
+			<ul class="list-unstyled">
+				<li><a href="about.html">Tentang Kami</a></li>
+				<li><a href="#">Kebijakan Privasi</a></li>
+				<li><a href="#">Syarat & Ketentuan</a></li>
+			</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="text-center">
+			<p>&copy; 2023 Made With KODEREST</p>
+		</div>
+		</div>
+	</footer>
+	
+		
+
+
+		 <!-- Panggil library jQuery dan bootstrap -->
+		 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+		 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
     </body>
 </html>
